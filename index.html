@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karanja Auto Spares</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
+  <!-- Loading Spinner -->
+  <div id="loading" class="loader"></div>
+
   <!-- Header -->
   <header>
     <div class="container">
@@ -27,10 +31,10 @@
   </nav>
 
   <!-- Home Section -->
-  <section id="home" class="hero">
+  <section id="home" class="hero animate__animated animate__fadeIn">
     <div class="container">
       <h2>Quality Auto Spares at Affordable Prices</h2>
-      <p>We provide genuine spare parts for Toyota vehicle makes and tractor plough parts/ bearings.</p>
+      <p>We provide genuine spare parts for Toyota vehicle models & tractor plough bearings/ parts.</p>
       <a href="#services" class="btn">Explore Services</a>
     </div>
   </section>
@@ -40,7 +44,7 @@
     <div class="container">
       <h2>About Us</h2>
       <p>Karanja Auto Spares has been serving the Narok Ololulunga community for over 20 years. We specialize in providing high-quality auto parts and exceptional customer service.</p>
-      <img src="assets/spare-parts.jpg" alt="Auto Spares">
+      <img src="assets/spare-parts.jpg" alt="Auto Spares" class="animate__animated animate__fadeInLeft">
     </div>
   </section>
 
@@ -49,19 +53,19 @@
     <div class="container">
       <h2>Our Services</h2>
       <div class="service-list">
-        <div class="service-item">
+        <div class="service-item animate__animated animate__fadeInUp">
           <h3>Genuine Spare Parts</h3>
-          <p>We offer authentic spare parts for Toyota vehicle models.</p>
+          <p>We offer authentic spare parts for all vehicle models.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item animate__animated animate__fadeInUp animate__delay-1s">
           <h3>Vehicle Maintenance</h3>
           <p>Professional maintenance services to keep your vehicle running smoothly.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item animate__animated animate__fadeInUp animate__delay-2s">
           <h3>Battery Replacement</h3>
           <p>High-quality batteries with expert installation.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item animate__animated animate__fadeInUp animate__delay-3s">
           <h3>Tire Sales and Repair</h3>
           <p>Durable tires and reliable repair services.</p>
         </div>
@@ -79,12 +83,12 @@
         Narok Ololulunga, Kenya<br>
         Phone: +254 726 241 408
       </address>
-      <img src="assets/location-map.jpg" alt="Location Map">
+      <img src="assets/location-map.jpg" alt="Location Map" class="animate__animated animate__fadeInRight">
       <form id="contactForm">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
         <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
@@ -96,6 +100,11 @@
     </div>
   </footer>
 
+  <!-- Back-to-Top Button -->
+  <button id="backToTop" class="back-to-top">↑</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
